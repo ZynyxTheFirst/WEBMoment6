@@ -6,8 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="Images/icon.ico">
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="script.js"></script>
-        <title>Robin Westling Portfolio</title>
+        <title>Nyan Studios Portfolio</title>
     </head>
     <body>
         <div class="topnav" id="myTopnav">
@@ -15,58 +14,76 @@
             <a href="#about">About</a>
         </div>
         <div class="wrapper">
-            
             <div class="main">
-                <h1>ROBIN WESTLING</h1>
+                <h1>NYAN STUDIOS</h1>
                 <hr>
                 <h2>PORTFOLIO</h2>
-                <p>Things that I've made during my school years</p>
+                <p>Things that we have made during our 3 years of school together</p>
                 <div id="myBtnContainer">
                     <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-                    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-                    <button class="btn" onclick="filterSelection('people')"> People</button>
+                    <button class="btn" onclick="filterSelection('coop')"> Cooperative</button>
+                    <button class="btn" onclick="filterSelection('robin')"> Robin</button>
+                    <button class="btn" onclick="filterSelection('elliot')"> Elliot</button>
                   </div>
                 <!-- Portfolio Gallery Grid -->
                 <div class="row">
-                    <div class="column">
+                    <div class="column coop">
                         <div class="content">
-                            <img src="mountains.jpg" alt="Mountains" style="width:100%">
-                            <h3>My Work</h3>
-                            <p>Lorem ipsum..</p>
+                            <img src="Images/Poster_Odobenus.png" alt="Poster_Odobenus" style="width:100%">
+                            <h3>Odobenus a 2d Puzzle Platformer</h3>
+                            <p>A game made by everyone in the team as a final project for our 3rd year of school</p>
+                            <p><a href="https://drive.google.com/file/d/13a_zezMrzhqJusMMtHfgX8mbU_BNpfNR/view?usp=sharing" target="_blank">Download - Google Drive</a></p>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column robin">
                         <div class="content">
-                            <img src="lights.jpg" alt="Lights" style="width:100%">
-                            <h3>My Work</h3>
-                            <p>Lorem ipsum..</p>
+                            <img src="Images/SortingAlg.PNG" alt="SortingAlgorithms" style="width:100%">
+                            <h3>Sorting Algorithms in c#</h3>
+                            <p><a href="https://github.com/ZynyxTheFirst/SortingAlgorithms" target="_blank">GitHub repository</a></p>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column coop">
                         <div class="content">
-                            <img src="nature.jpg" alt="Nature" style="width:100%">
-                            <h3>My Work</h3>
-                            <p>Lorem ipsum..</p>
+                            <img src="Images/database.PNG" alt="database" style="width:100%">
+                            <h3>A database over students and their respective parents</h3>
+                            <p>Made by Robin, Elliot and Douglas as a final project in the programming02 course</p>
+                            <p><a href="https://github.com/ZynyxTheFirst/PRRPRR02DATABASUPPGIFT" target="_blank">GitHub repository</a></p>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column elliot">
                         <div class="content">
-                            <img src="mountains.jpg" alt="Mountains" style="width:100%">
-                            <h3>My Work</h3>
-                            <p>Lorem ipsum..</p>
+                            <img src="Images/Npc_Walrus.png" alt="Walrus Npc" style="width:100%">
+                            <h3>Walrus Npc</h3>
+                            <p>Concept art for an NPC from the game Odobenus</p>
+                        </div>
+                    </div>
+                    <div class="column elliot">
+                        <div class="content">
+                            <img src="Images/Main_char-pixel.png" alt="Main character sprite" style="width:100%">
+                            <h3>Main Charcter Sprite</h3>
+                            <p>Final sprite for the player character in the game Odobenus</p>
+                        </div>
+                    </div>
+                    <div class="column coop">
+                        <div class="content">
+                            <img src="Images/website.PNG" alt="Website" style="width:100%">
+                            <h3>This Website</h3>
+                            <p>This website was made as a final project in the web design course</p>
+                            <p><a href="https://github.com/ZynyxTheFirst/WEBMoment6" target="_blank">GitHub repository</a></p>
+                        </div>
+                    </div>
+                    <div class="column robin">
+                        <div class="content">
+                            <img src="Images/walk.gif" alt="Walking animation" style="width:100%">
+                            <h3>Walking Animation</h3>
+                            <p>The first thing we did in the design course, a walking animation</p>
                         </div>
                     </div>
                 </div>
-            
-                <div class="content">
-                    <img src="bear.jpg" alt="Bear" style="width:100%">
-                    <h3>Some Other Work</h3>
-                <p>Lorem ipsum..</p>
-                </div>
-            
                 <!-- END MAIN -->
             </div>
         </div>
     </body>
+    <script type="text/javascript" src="JavaScript/script.js"></script>
+    <script type="text/javascript" src="JavaScript/stickyheader.js"></script>
 </html>
