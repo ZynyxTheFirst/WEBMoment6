@@ -41,6 +41,10 @@
       color: #bac5cc;
   }
 
+  .mail {
+    word-break: break-all;
+  }
+
   a {
     color: #38a6ec;
     text-decoration: none;
