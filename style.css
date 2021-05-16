@@ -5,11 +5,14 @@
   body {
     background-color: #202225;
     font-family: Arial;
+    margin: 0;
+    padding-top: 10px;
   }
   
 
   .wrapper {
     max-width: 1200px;
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -37,6 +40,11 @@
   p {
       color: #bac5cc;
   }
+
+  a {
+    color: #38a6ec;
+    text-decoration: none;
+  }
   
   .row {
     margin: 8px -16px;
@@ -52,6 +60,7 @@
   .column {
     float: left;
     width: 25%;
+    display: none;
   }
   .column-about{
     float: left;
@@ -104,20 +113,21 @@
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: white;
+  background-color: #36393f;
+  color: #f2f2f2;
   cursor: pointer;
 }
 
 
 /* Add a grey background color on mouse-over */
 .btn:hover {
-  background-color: #ddd;
+  background-color: #202225;
 }
 
 /* Add a dark background color to the active button */
 .btn.active {
-  background-color: #666;
-   color: white;
+    background-color: #7289da;
+    color: white;
 }
 
 .switch {
@@ -215,9 +225,9 @@ input[type="checkbox"]:checked ~ .check:before {
   }
 
   .sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%
+    width: 100%;
   }
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
