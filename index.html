@@ -1,9 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Images/icon.ico">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <title>Robin Westling Portfolio</title>
     </head>
     <body>
-        
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+        </div>
+        <div class="wrapper">
+            
+            <div class="main">
+                <h1>ROBIN WESTLING</h1>
+                <hr>
+                <h2>PORTFOLIO</h2>
+                <p>Things that I've made during my school years</p>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                    <button class="btn" onclick="filterSelection('people')"> People</button>
+                  </div>
+                <!-- Portfolio Gallery Grid -->
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <img src="mountains.jpg" alt="Mountains" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="lights.jpg" alt="Lights" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="nature.jpg" alt="Nature" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="mountains.jpg" alt="Mountains" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="content">
+                    <img src="bear.jpg" alt="Bear" style="width:100%">
+                    <h3>Some Other Work</h3>
+                <p>Lorem ipsum..</p>
+                </div>
+            
+                <!-- END MAIN -->
+            </div>
+        </div>
     </body>
 </html>
