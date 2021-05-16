@@ -187,12 +187,18 @@ input[type="checkbox"]:checked ~ .check:before {
     .column {
       width: 50%;
     }
+    .column-about{
+      width:50%;
+    }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
+    }
+    .column-about{
+      width:100%;
     }
   }
 
