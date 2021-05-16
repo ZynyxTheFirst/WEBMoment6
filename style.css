@@ -7,6 +7,7 @@
     font-family: Arial;
   }
   
+
   .wrapper {
     max-width: 1200px;
     margin-left: auto;
@@ -32,6 +33,7 @@
     hyphens: auto;
   }
 
+
   p {
       color: #bac5cc;
   }
@@ -51,6 +53,10 @@
     float: left;
     width: 25%;
   }
+  .column-about{
+    float: left;
+    width: 33.33%;
+  }
   
   /* Clear floats after rows */
   .row:after {
@@ -64,6 +70,29 @@
     background-color: #36393f;
     padding: 10px;
   }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #36393f;
+    color: white;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
 
   /* The "show" class is added to the filtered elements */
 .show {
@@ -79,6 +108,7 @@
   cursor: pointer;
 }
 
+
 /* Add a grey background color on mouse-over */
 .btn:hover {
   background-color: #ddd;
@@ -89,7 +119,55 @@
   background-color: #666;
    color: white;
 }
-  
+
+.switch {
+  position: relative;
+  float: right;
+  width: 60px;
+  height: 34px;
+}
+
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}  
+
+.check{
+  display: block;
+  height: 20px;
+  width: 40px;
+  background: #7289da;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  overflow: hidden;
+}
+
+input[type="checkbox"]:checked ~ .check {
+  background: white;
+  box-shadow: 0 0 0 1200px #7289da;
+}
+
+.check:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked ~ .check:before {
+  background: #7289da;
+  position: absolute;
+  transform: translateX(20px);
+}
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 900px) {
     .column {

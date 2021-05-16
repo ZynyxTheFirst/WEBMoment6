@@ -63,3 +63,9 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+const btn = document.querySelector(".btn-toggle");
+
+btn.addEventListener("click", function () {
+  document.body.classList.toggle("light-theme");
+});
